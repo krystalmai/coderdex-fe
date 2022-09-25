@@ -15,8 +15,8 @@ export const PokeType = ({ type, size = 'small', color, border, sx, onClick }) =
 				fontSize: size === 'small' ? 12 : 16,
 				width: size === 'small' ? '4.5rem' : '8rem',
 				padding: size === 'large' ? 2 : 0,
-				background: TYPE[type.toLowerCase()],
-				color: color || TYPE[`${type.toLowerCase()}Text`],
+				background: TYPE[type?.toLowerCase()],
+				color: color || TYPE[`${type?.toLowerCase()}Text`],
 			}}
 			size="small"
 			label={size === 'small' ? type : type[0].toUpperCase() + type.slice(1)}
